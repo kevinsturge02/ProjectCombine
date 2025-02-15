@@ -1,0 +1,20 @@
+# PyInstaller build and dist directories
+build/
+dist/
+
+# Python cache files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# PyInstaller specific files
+*.manifest
+*.spec
+*.toc
+*.pyz
+*.pyw
+base_library.zip
+
+# OS specific files
+.DS_Store
+Thumbs.db

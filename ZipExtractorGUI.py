@@ -10,6 +10,14 @@ class ZipExtractorGUI:
         self.root.title("Code File Extractor")
         self.root.geometry("600x400")
         
+        # Set app icon
+        try:
+            icon_path = os.path.join(os.path.dirname(os.path.abspath(__file__)), 'app_icon.png')
+            if os.path.exists(icon_path):
+                self.root.iconphoto(True, tk.PhotoImage(file=icon_path))
+        except Exception:
+            pass  # Skip icon if not found
+        
         # Create main frame
         main_frame = ttk.Frame(root, padding="10")
         main_frame.grid(row=0, column=0, sticky=(tk.W, tk.E, tk.N, tk.S))
